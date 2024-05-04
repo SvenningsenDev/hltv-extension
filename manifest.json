@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Spoiler Remover",
+    "version": "1.0",
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icons/spoilerfree.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.hltv.org/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
