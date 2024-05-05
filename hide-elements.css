@@ -1,0 +1,4 @@
+/* Initially hide elements that should be blurred */
+.result-score, .twoRowExtra, .won, .lost, .mapholder {
+    visibility: hidden;
+}

@@ -2,9 +2,41 @@
 <html>
 <head>
     <title>Toggle Spoilers</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Sleek, professional font */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; /* Neutral background */
+        }
+
+        #toggleSpoiler {
+            padding: 8px 50px; /* Slender design */
+            font-size: 16px; /* Optimal readability */
+            color: #ffffff; /* High contrast text color */
+            background-color: #007BFF; /* Chroma blue base color */
+            border: none;
+            border-radius: 0; /* No rounded corners for a sharp, modern look */
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth transition for background color */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for a soft 3D effect */
+        }
+
+        #toggleSpoiler:hover, #toggleSpoiler:focus {
+            background-color: #0056b3; /* Darker shade of blue on hover */
+            outline: none; /* Remove focus outline */
+        }
+
+        #toggleSpoiler:active {
+            background-color: #004085; /* Even darker on active to provide feedback */
+        }
+    </style>
 </head>
 <body>
-    <button id="toggleSpoiler">Remove Spoilers</button>
+    <button id="toggleSpoiler">Toggle Spoilers</button>
     <script src="popup.js"></script>
 </body>
 </html>
